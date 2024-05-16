@@ -15,11 +15,6 @@ controles <- datos %>%
   filter(Condicion=="Control")
 head(controles)
 
-
-#guardar tabla 
-
-write_csv(promedios_DCT, "promedios_DCT.csv")
-
 #Promedios control
 promedios_control <- controles %>%  
   summarise(Mean_C1=mean(Cx1),
